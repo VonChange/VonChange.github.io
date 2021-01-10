@@ -6,5 +6,6 @@
    * [搭建ubuntu server及其k8s](doc/host/ubuntu.md)
    * [使用frp代理本地机器到公网](doc/host/frp.md)
    * [搭建gitlab并使用CICD部署HelloWorld](doc/host/gitlab-ci.md)
+* [IDEA全系列最简单的破解方式](doc/idea.md)
 
 

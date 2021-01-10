@@ -4,7 +4,7 @@
         <description><![CDATA[小白鼠V技术驿站]]></description>
         <link>http://www.vonchange.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 05 Jul 2020 00:01:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Jan 2021 12:49:31 GMT</lastBuildDate>
         <atom:link href="http://www.vonchange.com/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[vonchange]]></author>
         <managingEditor><![CDATA[vonchange@163.com]]></managingEditor>
@@ -55,6 +55,13 @@ ecs]]></description>
             <description><![CDATA[项目下添加.gitlab-ci.yml 参考项目]]></description>
             <link>http://www.vonchange.com/doc/host/gitlab-ci.html</link>
             <guid isPermaLink="true">http://www.vonchange.com/doc/host/gitlab-ci.html</guid>
+            <dc:creator><![CDATA[vonchange]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[IDEA 全系列组最简单最low的破解 去除30min限制]]></description>
+            <link>http://www.vonchange.com/doc/idea.html</link>
+            <guid isPermaLink="true">http://www.vonchange.com/doc/idea.html</guid>
             <dc:creator><![CDATA[vonchange]]></dc:creator>
         </item>
     </channel>

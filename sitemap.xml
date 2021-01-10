@@ -6,4 +6,5 @@
 <url> <loc>http://www.vonchange.com/doc/host/ubuntu.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.vonchange.com/doc/host/frp.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.vonchange.com/doc/host/gitlab-ci.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://www.vonchange.com/doc/idea.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
