@@ -13,7 +13,7 @@
     "plugins": [
         "toc",
         "theme-comscore",
-        "pageview-count",
+        "3-ba",
         "-lunr",
         "-search",
         "search-plus",
@@ -60,6 +60,9 @@
         },
         "icp": {
             "number": "鲁ICP备20022988号"
+        },
+        "3-ba": {
+            "token": "07ec7e1b1f91c8a8828cb7504bf53222"
         },
         "sharing": {
             "douban": true,
