@@ -13,7 +13,7 @@
     "plugins": [
         "toc",
         "theme-comscore",
-        "npm i gitbook-plugin-ga",
+        "3-ba",
         "-lunr",
         "-search",
         "search-plus",
