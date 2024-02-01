@@ -5,8 +5,8 @@
 
 
 - [![GitBook](https://img.shields.io/badge/BLOG-www.vonchange.com-brightgreen.svg)](http://www.vonchange.com/)
-- [![SpringDataMybatisMini](https://img.shields.io/badge/SpringDataMybatisMini-github-brightgreen.svg)](https://github.com/VonChange/spring-data-mybatis-mini)
-- [![SpringDataMybatisMini](https://img.shields.io/badge/SpringDataMybatisMini-gitee-brightgreen.svg)](https://gitee.com/vonchange/spring-data-mybatis-mini)
+- [![SpringDataJdbcMybatis](https://img.shields.io/badge/SpringDataJdbcMybatis-github-brightgreen.svg)](https://github.com/VonChange/spring-data-jdbc-mybatis)
+- [![SpringDataJdbcMybatis](https://img.shields.io/badge/SpringDataJdbcMybatis-gitee-brightgreen.svg)](https://gitee.com/vonchange/spring-data-jdbc-mybatis)
 
 
 ### 目录

@@ -1,13 +1,13 @@
 {
-    "title": "小白鼠V技术驿站",
+    "title": "change的技术驿站",
     "author": "vonchange",
     "baidu-site-verification":"cAxqlT3C5k",
-    "description": "小白鼠V技术驿站",
+    "description": "change技术驿站",
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "links": {
         "sidebar": {
-            "小白鼠V的技术博客": "http://www.vonchange.com/"
+            "change的技术博客": "http://www.vonchange.com/"
         }
     },
     "plugins": [
@@ -99,8 +99,8 @@
             "type": "c3"
         },
         "rss": {
-            "title": "小白鼠V技术驿站",
-            "description": "小白鼠V技术驿站",
+            "title": "change技术驿站",
+            "description": "change技术驿站",
             "author": "vonchange",
             "site_url": "http://www.vonchange.com/",
             "feed_url": "http://www.vonchange.com/rss",
@@ -118,8 +118,8 @@
         },
         "copyright": {
             "site": "http://www.vonchange.com/",
-            "author": "小白鼠V",
-            "website": "小白鼠V技术驿站",
+            "author": "change",
+            "website": "change的技术驿站",
             "copyProtect": false
         },
         "tbfed-pagefooter": {
