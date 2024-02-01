@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>闲置主机做开发服务器 · 小白鼠V技术驿站</title>
+        <title>spring-data-mybatis-mini极简ORM · 小白鼠V技术驿站</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="baidu-site-verification" content="cAxqlT3C5k">
@@ -105,10 +105,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="host/ubuntu.html" />
+    <link rel="next" href="host.html" />
     
     
-    <link rel="prev" href="jdbc.html" />
+    <link rel="prev" href="../" />
     
 
     <link href="http://www.vonchange.com/rss" title="小白鼠V技术驿站" rel="alternate" type="application/rss+xml" />
@@ -193,7 +193,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="jdbc.html">
+        <li class="chapter active" data-level="1.2" data-path="jdbc.html">
             
                 <a href="jdbc.html">
             
@@ -206,7 +206,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="host.html">
+        <li class="chapter " data-level="1.3" data-path="host.html">
             
                 <a href="host.html">
             
@@ -321,7 +321,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >闲置主机做开发服务器</a>
+        <a href=".." >spring-data-mybatis-mini极简ORM</a>
     </h1>
 </div>
 
@@ -336,22 +336,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>搭建教程均采用docker k8s安装 需要一定的容器基础</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#what-is-this"><b>1.1. </b>What Is This?</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><a href="https://github.com/VonChange/spring-data-jdbc-mybatis" target="_blank">github地址</a>
+<a href="https://gitee.com/vonchange/spring-data-jdbc-mybatis" target="_blank">gitee地址</a></p>
+<p><strong>spring data jdbc 扩展 mybatis 动态sql能力</strong></p>
+<h2 id="what-is-this"><a name="what-is-this" class="anchor-navigation-ex-anchor" href="#what-is-this"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. What Is This?</h2>
 <ul>
-<li><a href="doc/host/ubuntu.md">搭建ubuntu server及其k8s</a></li>
-<li><a href="doc/host/gitlab-ci.md">搭建gitlab并使用CICD部署HelloWorld</a></li>
-<li><a href="doc/host/frp.md">使用frp代理本地机器到公网</a></li>
-<li><a href="doc/host/gitea.md">gitea替换gitlab部署CICD</a></li>
+<li><p>使用jdbcTemplate,相当于直接调用jdbc。不提供缓存、延迟加载等JPA或mybatis的许多特性。一个简单、有限、固执己见的ORM</p>
+</li>
+<li><p>使用mybatis动态sql能力,可以应对复杂sql</p>
+</li>
+<li><p>SQL 写在 Markdown 里</p>
+</li>
 </ul>
+<p><a href="spring-data-jdbc-mybatis-test%2Fsrc%2Ftest%2Fresources%2Fsql%2FUserInfoRepository.md">UserInfoRepository.md</a></p>
+<pre><code class="lang-sql"><span class="hljs-comment">-- findUserByIds</span>
+<span class="hljs-keyword">SELECT</span>  [@<span class="hljs-keyword">id</span> <span class="hljs-keyword">column</span>] <span class="hljs-keyword">FROM</span> user_base 
+&lt;<span class="hljs-keyword">where</span>&gt; 
+[@@<span class="hljs-keyword">and</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">in</span> #{idList:<span class="hljs-keyword">in</span>} <span class="hljs-keyword">and</span> user_name <span class="hljs-keyword">like</span> #{userName:<span class="hljs-keyword">like</span>}]
+[@<span class="hljs-keyword">and</span> user_name <span class="hljs-keyword">like</span> userName%]
+[@<span class="hljs-keyword">and</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">in</span> idList]
+&lt;<span class="hljs-keyword">if</span> <span class="hljs-keyword">test</span>=<span class="hljs-string">&quot;null!=createTime&quot;</span>&gt;  <span class="hljs-keyword">and</span> create_time &lt; #{createTime}  &lt;/<span class="hljs-keyword">if</span>&gt;
+&lt;/<span class="hljs-keyword">where</span>&gt;
+</code></pre>
 <script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
 
 <pre><code class="lang-html">作者: 小白鼠V
-链接: http://www.vonchange.com/doc/host.html
+链接: http://www.vonchange.com/doc/jdbc.html
 来源: 小白鼠V技术驿站
 本文原创发布于「小白鼠V技术驿站」,转载请注明出处,谢谢合作!
 </code></pre>
 <p><footer class="page-footer"><span class="copyright">© vonchange all right reserved，powered by Gitbook</span><span class="footer-modification">文件修订时间: 
-2020-06-12 17:47:39
+2024-02-01 15:36:09
 </span></footer></p>
 <div id="gitalk-container"></div>
                                 
@@ -380,12 +395,12 @@
 
             
                 
-                <a href="jdbc.html" class="navigation navigation-prev " aria-label="Previous page: spring-data-mybatis-mini极简ORM">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 博客总揽">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="host/ubuntu.html" class="navigation navigation-next " aria-label="Next page: 搭建ubuntu server及其k8s">
+                <a href="host.html" class="navigation navigation-next " aria-label="Next page: 闲置主机做开发服务器">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -396,7 +411,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"闲置主机做开发服务器","level":"1.3","depth":1,"next":{"title":"搭建ubuntu server及其k8s","level":"1.3.1","depth":2,"path":"doc/host/ubuntu.md","ref":"doc/host/ubuntu.md","articles":[]},"previous":{"title":"spring-data-mybatis-mini极简ORM","level":"1.2","depth":1,"path":"doc/jdbc.md","ref":"doc/jdbc.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","theme-comscore","3-ba","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","copyright","tbfed-pagefooter","mygitalk","donate","diff","simple-mind-map","hide-element","audio_image","icp","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy vonchange","modify_label":"文件修订时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"diff":{"method":"diffChars","options":{},"type":"markdown"},"splitter":{},"copyright":{"copyProtect":false,"site":"http://www.vonchange.com/","author":"小白鼠V","website":"小白鼠V技术驿站"},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"vonchange.github.io":"https://github.com/VonChange/VonChange.github.io/edit/master"},"defaultBase":"https://github.com/VonChange/VonChange.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"donate":{"alipay":"/doc/image/zfb.jpeg","alipayText":"支付宝","button":"赏","title":"","wechat":"/doc/image/wx.jpeg","wechatText":"微信"},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"http://www.vonchange.com/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["orm","k8s","devops","java"],"title":"小白鼠V技术驿站","description":"小白鼠V技术驿站","author":"vonchange","site_url":"http://www.vonchange.com/","feed_url":"http://www.vonchange.com/rss","managingEditor":"vonchange@163.com","webMaster":"vonchange@163.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"icp":{"link":"http://www.beian.miit.gov.cn/","style":{},"number":"鲁ICP备20022988号"},"github-buttons":{"buttons":[{"user":"vonchange","repo":"vonchange.github.io","type":"star","size":"small"}]},"3-ba":{"configuration":"auto","token":"07ec7e1b1f91c8a8828cb7504bf53222"},"expandable-chapters-small":{},"mygitalk":{"flipMoveOptions":{},"clientID":"7f7363b6e6e3c9a06f4f","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["vonchange"],"createIssueManually":false,"distractionFreeMode":false,"repo":"vonchange.github.io","owner":"vonchange","enableHotKey":true,"clientSecret":"6e71673a0cfb622b535af4c00b0622cf2d34d31b","pagerDirection":"last","labels":["Gitalk"]},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"vonchange","baidu-site-verification":"cAxqlT3C5k","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小白鼠V技术驿站","language":"zh-hans","links":{"sidebar":{"小白鼠V的技术博客":"http://www.vonchange.com/"}},"gitbook":"3.2.3","description":"小白鼠V技术驿站"},"file":{"path":"doc/host.md","mtime":"2020-06-12T09:47:39.351Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-01T07:45:59.370Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"spring-data-mybatis-mini极简ORM","level":"1.2","depth":1,"next":{"title":"闲置主机做开发服务器","level":"1.3","depth":1,"path":"doc/host.md","ref":"doc/host.md","articles":[{"title":"搭建ubuntu server及其k8s","level":"1.3.1","depth":2,"path":"doc/host/ubuntu.md","ref":"doc/host/ubuntu.md","articles":[]},{"title":"使用frp代理本地机器到公网","level":"1.3.2","depth":2,"path":"doc/host/frp.md","ref":"doc/host/frp.md","articles":[]},{"title":"搭建gitlab并使用CICD部署HelloWorld","level":"1.3.3","depth":2,"path":"doc/host/gitlab-ci.md","ref":"doc/host/gitlab-ci.md","articles":[]}]},"previous":{"title":"博客总揽","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","theme-comscore","3-ba","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","sitemap-general","copyright","tbfed-pagefooter","mygitalk","donate","diff","simple-mind-map","hide-element","audio_image","icp","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy vonchange","modify_label":"文件修订时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"diff":{"method":"diffChars","options":{},"type":"markdown"},"splitter":{},"copyright":{"copyProtect":false,"site":"http://www.vonchange.com/","author":"小白鼠V","website":"小白鼠V技术驿站"},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"vonchange.github.io":"https://github.com/VonChange/VonChange.github.io/edit/master"},"defaultBase":"https://github.com/VonChange/VonChange.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"donate":{"alipay":"/doc/image/zfb.jpeg","alipayText":"支付宝","button":"赏","title":"","wechat":"/doc/image/wx.jpeg","wechatText":"微信"},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{},"favicon":"/favicon.ico"},"sitemap-general":{"prefix":"http://www.vonchange.com/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["orm","k8s","devops","java"],"title":"小白鼠V技术驿站","description":"小白鼠V技术驿站","author":"vonchange","site_url":"http://www.vonchange.com/","feed_url":"http://www.vonchange.com/rss","managingEditor":"vonchange@163.com","webMaster":"vonchange@163.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"icp":{"link":"http://www.beian.miit.gov.cn/","style":{},"number":"鲁ICP备20022988号"},"github-buttons":{"buttons":[{"user":"vonchange","repo":"vonchange.github.io","type":"star","size":"small"}]},"3-ba":{"configuration":"auto","token":"07ec7e1b1f91c8a8828cb7504bf53222"},"expandable-chapters-small":{},"mygitalk":{"flipMoveOptions":{},"clientID":"7f7363b6e6e3c9a06f4f","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["vonchange"],"createIssueManually":false,"distractionFreeMode":false,"repo":"vonchange.github.io","owner":"vonchange","enableHotKey":true,"clientSecret":"6e71673a0cfb622b535af4c00b0622cf2d34d31b","pagerDirection":"last","labels":["Gitalk"]},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"vonchange","baidu-site-verification":"cAxqlT3C5k","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小白鼠V技术驿站","language":"zh-hans","links":{"sidebar":{"小白鼠V的技术博客":"http://www.vonchange.com/"}},"gitbook":"3.2.3","description":"小白鼠V技术驿站"},"file":{"path":"doc/jdbc.md","mtime":"2024-02-01T07:36:09.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-01T07:45:59.370Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
