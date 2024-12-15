@@ -1,13 +1,13 @@
-FROM nginx:1.17.2
+FROM registry.cn-hangzhou.aliyuncs.com/nine/blog:v2024080601
 
 RUN echo "Asia/shanghai" > /etc/timezone;
-#ADD  _book /usr/share/nginx/html
+# ADD  docs /usr/share/nginx/html
 
 COPY ./config/nginx.conf /etc/nginx/nginx.conf
-COPY config/init.sh /etc/nginx
-RUN chmod 777 /etc/nginx/init.sh
+COPY config/init.sh /home
+RUN chmod 777 /home/init.sh
 VOLUME /usr/share/nginx/html
-ENTRYPOINT ["/etc/nginx/init.sh"]
+#ENTRYPOINT ["/home/init.sh"]
 CMD ["nginx", "-g", "daemon off;"]
 
 EXPOSE 80

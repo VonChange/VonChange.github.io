@@ -2,6 +2,7 @@
 .gradle
 .idea
 /.idea
+dist.tar.gz
 docs/.vuepress
 /local.properties
 /.idea/caches
