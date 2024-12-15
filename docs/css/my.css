@@ -14,6 +14,7 @@ html,body{
   flex-direction: column;
   visibility: visible;
   height: 100%;
+  background: url("../img/6-dark.svg") center center / cover no-repeat fixed;
 }
 .tv-header{
     /*  overflow-x: hidden;  justify-content: space-around;*/
