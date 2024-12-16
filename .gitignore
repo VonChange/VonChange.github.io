@@ -2,6 +2,7 @@
 .gradle
 .idea
 /.idea
+docs/apk
 dist.tar.gz
 docs/.vuepress
 /local.properties
