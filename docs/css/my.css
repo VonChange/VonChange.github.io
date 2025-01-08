@@ -14,7 +14,7 @@ html,body{
   flex-direction: column;
   visibility: visible;
   height: 100%;
-  background: url("../img/6-dark.svg") center center / cover no-repeat fixed;
+  /*background: url("../img/6-dark.svg") center center / cover no-repeat fixed;*/
 }
 .tv-header{
     /*  overflow-x: hidden;  justify-content: space-around;*/
@@ -33,7 +33,7 @@ html,body{
 .tv-text{
     text-align: center;
     font-size: 4vh;
-    color: white;
+    color: black;
 }
 
 .tv-content{
