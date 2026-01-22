@@ -204,23 +204,24 @@ body {
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .features-section {
     grid-template-columns: 1fr;
   }
-  
+
   .social-links {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .download-options {
     flex-direction: column;
     align-items: center;
   }
 }
 
-html, body {
+html,
+body {
   margin: 0;
   background: var(--background-color);
   font-size: 100%;
@@ -239,133 +240,153 @@ html, body {
   height: 100%;
 }
 
-.tv-header{
-    /*  overflow-x: hidden;  justify-content: space-around;*/
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-top: 3vh;
-    justify-content: space-around
-}
-.tv-footer{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around
-}
-.tv-text{
-    text-align: center;
-    font-size: 4vh;
-    color: var(--text-color);
-}
-
-.tv-content{
-    flex: 1;
-    overflow-y: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-}
-
-.tv-item{
-    padding: 0.5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.3vw;
-}
-.tv-channel{
+.tv-header {
+  /*  overflow-x: hidden;  justify-content: space-around;*/
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  flex-grow:1;
+  margin-top: 3vh;
   justify-content: space-around
 }
-.tv-tab-flex{
+
+.tv-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around
+}
+
+.tv-text {
+  text-align: center;
+  font-size: 4vh;
+  color: var(--text-color);
+}
+
+.tv-content {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+.tv-item {
+  padding: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.3vw;
+}
+
+.tv-channel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-around
+}
+
+.tv-tab-flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-grow:1;
+  flex-grow: 1;
   justify-content: space-around
 }
-.tv-tab-grid{
+
+.tv-tab-grid {
   flex: 1;
   overflow-y: auto;
   display: grid;
   grid-template-columns: repeat(6, 16.6%);
 }
-.tv-grid-6{
+
+.tv-grid-6 {
   grid-template-columns: repeat(6, 16.6%);
 }
-.tv-grid-4{
-    grid-template-columns: repeat(4, 25%);
+
+.tv-grid-4 {
+  grid-template-columns: repeat(4, 25%);
 }
-.tab-grid-item{
-  white-space: normal; /* 或者 pre-wrap，根据需求选择 */
-  word-break: break-all; /* 允许在任何字符之后断行 */
+
+.tab-grid-item {
+  white-space: normal;
+  /* 或者 pre-wrap，根据需求选择 */
+  word-break: break-all;
+  /* 允许在任何字符之后断行 */
 }
-.tv-hide{
+
+.tv-hide {
   display: none;
 }
 
-.tv-flex-around{
-    justify-content: space-around;
+.tv-flex-around {
+  justify-content: space-around;
 }
-.tv-menu{
+
+.tv-menu {
   overflow-x: hidden;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around
 }
-.tv-btn{
-   font-size: 3rem;
-   padding: 0.25rem 0.5rem;
-    line-height: 4rem;
-   border-radius: 1rem;
-    text-decoration: none;
-   align-content: center;
-    vertical-align: middle;
-   /* width: fit-content;*/
-    white-space: normal;
-    text-align: center;
-    color: var(--text-color);
-    cursor: pointer;
-    word-spacing: normal;
-    background-color: var(--card-background);
-    flex-shrink: 0;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+
+.tv-btn {
+  font-size: 3rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 4rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  align-content: center;
+  vertical-align: middle;
+  /* width: fit-content;*/
+  white-space: normal;
+  text-align: center;
+  color: var(--text-color);
+  cursor: pointer;
+  word-spacing: normal;
+  background-color: var(--card-background);
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
+
 .tv-btn:hover {
   background-color: var(--hover-color);
   border-color: var(--primary-color);
 }
-.tv-btn-vw{
+
+.tv-btn-vw {
   padding: 0.5vw 1vw;
   font-size: 2.5vw;
-  margin: 0.5vw 0.3vw; 
+  margin: 0.5vw 0.3vw;
   border-radius: 2vw;
 }
-.tv-font-bold{
+
+.tv-font-bold {
   font-weight: bold;
 }
-.tv-btn-choose{
+
+.tv-btn-choose {
   background-color: var(--primary-color);
   color: white;
 }
-.tv-bg-yellow{
-  background-color:#E3EDCD;
+
+.tv-bg-yellow {
+  background-color: #E3EDCD;
 }
-.tv-front{
+
+.tv-front {
   font-size: 2vw;
 }
-.tv-btn-warm{
+
+.tv-btn-warm {
   background-color: #ffb800;
 }
 
-.tv-active{
-    background-color: #71b371;
+.tv-active {
+  background-color: #71b371;
 }
 
 .install-guide a {
@@ -383,4 +404,49 @@ html, body {
   background-color: var(--hover-color);
   border-color: var(--primary-color);
   color: var(--primary-color);
+}
+
+/* 顶部推荐链接样式 - 极致醒目方案：橘色背景 + 绿色按钮 */
+.recommend-banner {
+  background: linear-gradient(90deg, #ffb800, #ff8c00);
+  /* 恢复橘色背景 */
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 100;
+}
+
+.recommend-banner a {
+  color: #ffffff;
+  /* 白色字体 */
+  background-color: #2e7d32;
+  /* 绿色按钮背景 */
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 24px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  /* 白色边框增加对比度 */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recommend-banner a:hover {
+  background-color: #1b5e20;
+  /* 悬停时深绿色 */
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.recommend-banner .new-tag {
+  background-color: #ffffff;
+  color: #ff5252;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
