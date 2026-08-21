@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>土拨鼠大屏浏览器 - 你的智能电视浏览器</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/my.css?v=20250108" rel="stylesheet">
+    <link href="css/my.css?v=20260821d" rel="stylesheet">
     <meta name="description" content="土拨鼠大屏浏览器（原油桃TV）专为电视、投影等大屏设备设计的第三方浏览器，免费看电视直播，各大平台视频官网适配，突破爱奇艺等平台投屏限制，支持遥控器操作与智能全屏播放。" />
     <meta name="keywords" content="土拨鼠大屏浏览器 油桃TV 电视端浏览器 大屏浏览器 智能电视浏览器 爱奇艺投屏限制 免费看电视直播" />
     <meta name="author" content="vonchange, vonchange@163.com" />
@@ -24,7 +24,7 @@
 
 <body>
     <div class="recommend-banner">
-        <a href="https://www.vonchange.com" target="_blank"><span class="new-tag">推荐</span> 推荐使用土拨鼠大屏助手，点击直达</a>
+        <a href="https://www.vonchange.com" target="_blank"><span class="new-tag">推荐</span> 推荐使用土拨鼠遥控，点击直达</a>
     </div>
     <div class="recommend-banner">
         <span class="new-tag">升级</span> 油桃TV 已升级为 <strong>土拨鼠大屏浏览器</strong>，功能持续更新，老用户可直接下载新版使用
@@ -69,6 +69,15 @@
                         <a href="https://wwbng.lanzouq.com/s/utao-history" target="_blank" class="secondary-button">历史版本</a>
                     </div>
                 </div>
+
+                <aside class="usage-notice" role="note">
+                    <span class="usage-notice-label">重要</span>
+                    <p>
+                        各大平台视频播放与任意网站浏览，需配合
+                        <a href="https://www.vonchange.com" target="_blank" rel="noopener">土拨鼠遥控</a>
+                        中的<strong>浏览器遥控</strong>使用。
+                    </p>
+                </aside>
             </section>
 
             <section class="features-section">
@@ -93,13 +102,58 @@
                 </div>
             </section>
 
-            <section class="preview-section">
+            <section class="preview-section" aria-label="产品预览">
                 <h3>产品预览</h3>
-                <div class="preview-images">
-                    <img src="img/home.jpg" alt="土拨鼠大屏浏览器主界面" />
-                    <img src="img/demo3.jpg" alt="demo2" />
-                    <img src="img/demo1.jpg" alt="使用演示" />
-                </div>
+
+                <!-- 第一行：电视直播大屏 -->
+                <article class="preview-row preview-row-live">
+                    <div class="preview-live-media">
+                        <img src="img/01.jpeg" alt="土拨鼠大屏浏览器：电视直播频道列表与画面" width="1200" height="540" loading="lazy" decoding="async">
+                    </div>
+                    <div class="preview-live-copy">
+                        <p class="preview-eyebrow">电视端 · 免费直播</p>
+                        <h4>电视直播一目了然</h4>
+                        <p>央视、卫视与地方台分类清晰，遥控器点选切台；大屏直接播，适合客厅长时间观看。</p>
+                    </div>
+                </article>
+
+                <!-- 第二行：浏览器遥控三机循环（配合土拨鼠遥控） -->
+                <article class="preview-row feature-fan-section" id="browserRemoteFan" aria-label="浏览器遥控配合截图">
+                    <div class="feature-fan">
+                        <div class="feature-fan-stage" aria-live="polite">
+                            <div class="feature-fan-phones" id="featureFanPhones">
+                                <button type="button" class="feature-fan-phone" data-index="0" data-pos="center" aria-label="浏览器遥控入口">
+                                    <div class="feature-fan-frame">
+                                        <img class="feature-fan-screen" src="img/02.jpeg" alt="土拨鼠遥控：浏览器遥控首页，各大视频平台入口" width="406" height="878" loading="eager" decoding="async">
+                                    </div>
+                                    <span class="feature-fan-label">平台入口</span>
+                                </button>
+                                <button type="button" class="feature-fan-phone" data-index="1" data-pos="right" aria-label="平台片库浏览">
+                                    <div class="feature-fan-frame">
+                                        <img class="feature-fan-screen" src="img/03.jpeg" alt="土拨鼠遥控：爱奇艺片库浏览与筛选" width="406" height="878" loading="eager" decoding="async">
+                                    </div>
+                                    <span class="feature-fan-label">片库浏览</span>
+                                </button>
+                                <button type="button" class="feature-fan-phone" data-index="2" data-pos="left" aria-label="播放遥控">
+                                    <div class="feature-fan-frame">
+                                        <img class="feature-fan-screen" src="img/04.jpeg" alt="土拨鼠遥控：选集、进度与音量播放控制" width="406" height="878" loading="eager" decoding="async">
+                                    </div>
+                                    <span class="feature-fan-label">播放遥控</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="feature-fan-copy">
+                            <p class="feature-fan-eyebrow">手机端 · 土拨鼠遥控</p>
+                            <h4 class="feature-fan-title" id="featureFanTitle">浏览器遥控入口</h4>
+                            <p class="feature-fan-desc" id="featureFanDesc">打开土拨鼠遥控的「浏览器遥控」，一键进入腾讯视频、爱奇艺、芒果、B站等平台，也可搜索任意网站。</p>
+                            <div class="feature-fan-dots" id="featureFanDots" role="tablist" aria-label="浏览器遥控截图切换">
+                                <button type="button" class="feature-fan-dot is-active" role="tab" aria-selected="true" data-index="0" aria-label="浏览器遥控入口"></button>
+                                <button type="button" class="feature-fan-dot" role="tab" aria-selected="false" data-index="1" aria-label="平台片库浏览"></button>
+                                <button type="button" class="feature-fan-dot" role="tab" aria-selected="false" data-index="2" aria-label="播放遥控"></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </section>
             <section class="download-section">
                 <!--            <h3>其他下载方式</h3>-->
@@ -111,25 +165,109 @@
                     <a href="https://www.shafa.com/methods" target="_blank">📱 如何安装到电视可点击参考沙发管家安装教程</a>
                 </p>
             </section>
-            <section class="contact-section">
-                <h3>可以在抖音内私信或者任一视频下留言反馈使用问题</h3>
-                <div class="social-links">
-                    <div class="social-card">
-                        <img src="img/mydy.jpg" alt="抖音二维码" />
-                        <p>抖音关注</p>
-                    </div>
-                    <div class="social-card">
-                        <img src="img/weibo.jpg" alt="微博二维码" />
-                        <p>微博关注</p>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <footer class="main-footer">
             <p>©2026 von change 版权所有 · 土拨鼠大屏浏览器（原油桃TV）</p>
         </footer>
     </div>
+    <script>
+    (function () {
+        var items = [
+            {
+                title: '浏览器遥控入口',
+                desc: '打开土拨鼠遥控的「浏览器遥控」，一键进入腾讯视频、爱奇艺、芒果、B站等平台，也可搜索任意网站。'
+            },
+            {
+                title: '平台片库浏览',
+                desc: '在手机端浏览热门、最新与分类内容，点选后大屏浏览器打开对应页面，无需在电视上艰难点选。'
+            },
+            {
+                title: '播放遥控',
+                desc: '选集、进度、音量与全屏均可在手机操控；搭配飞鼠触控，各大平台视频与任意网站都能顺畅操作。'
+            }
+        ];
+        var phones = Array.prototype.slice.call(document.querySelectorAll('#featureFanPhones .feature-fan-phone'));
+        var dots = Array.prototype.slice.call(document.querySelectorAll('#featureFanDots .feature-fan-dot'));
+        var titleEl = document.getElementById('featureFanTitle');
+        var descEl = document.getElementById('featureFanDesc');
+        if (!phones.length || !titleEl || !descEl) return;
+
+        var focus = 0;
+        var timer = null;
+        var INTERVAL_MS = 2800;
+        var n = items.length;
+
+        function posForOffset(offset) {
+            if (offset === 0) return 'center';
+            if (offset === 1) return 'right';
+            if (offset === n - 1) return 'left';
+            return 'hidden';
+        }
+
+        function setFocus(index) {
+            focus = (index + items.length) % items.length;
+            phones.forEach(function (phone) {
+                var i = Number(phone.dataset.index);
+                var offset = (i - focus + items.length) % items.length;
+                phone.dataset.pos = posForOffset(offset);
+            });
+            titleEl.textContent = items[focus].title;
+            descEl.textContent = items[focus].desc;
+            dots.forEach(function (dot) {
+                var active = Number(dot.dataset.index) === focus;
+                dot.classList.toggle('is-active', active);
+                dot.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
+        }
+
+        function next() {
+            setFocus(focus + 1);
+        }
+
+        function startAuto() {
+            stopAuto();
+            timer = setInterval(next, INTERVAL_MS);
+        }
+
+        function stopAuto() {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        phones.forEach(function (phone) {
+            phone.addEventListener('click', function () {
+                setFocus(Number(phone.dataset.index));
+                startAuto();
+            });
+        });
+        dots.forEach(function (dot) {
+            dot.addEventListener('click', function () {
+                setFocus(Number(dot.dataset.index));
+                startAuto();
+            });
+        });
+
+        var section = document.getElementById('browserRemoteFan');
+        if (section && 'IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                var entry = entries[0];
+                if (entry && entry.isIntersecting) {
+                    startAuto();
+                } else {
+                    stopAuto();
+                }
+            }, { threshold: 0.25 });
+            io.observe(section);
+        } else {
+            startAuto();
+        }
+
+        setFocus(0);
+    })();
+    </script>
 </body>
 
 </html>
