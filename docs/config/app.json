@@ -17,24 +17,17 @@
     "forceUpdate": false,
     "announcement": {
       "title": "Android Update Available",
-      "content": " Fixed known bugs.",
+      "content": "Fixed known bugs.",
       "forceShow": false,
       "detailLink": "marmot://help-doc?file=release.md&title=Release%20Notes",
       "detailText": "View Details"
     },
-    "upgrade": {
-      "enabled": true,
-      "source": "oci",
-      "registry": "swr.cn-east-3.myhuaweicloud.com",
-      "namespace": "vonchange",
-      "name": "marmot",
-      "tag": "v2026.08.22"
-    }
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.vonchange.marmot.intl"
   },
   "ios": {
     "buildNumber": 14,
     "versionName": "2026.08.16",
-    "appStoreUrl": "https://apps.apple.com/cn/app/id6757800783",
+    "appStoreUrl": "https://apps.apple.com/app/id6804331547",
     "forceUpdate": false,
     "announcement": {
       "title": "iOS Update Available",
